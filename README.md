@@ -1,15 +1,15 @@
-# derived-key-storage
+# dweb-derived-key-storage
 
 Derive a key and secret key file from a name.
 
 ```
-npm install derived-key-storage
+npm install dweb-derived-key-storage
 ```
 
 ## Usage
 
 ``` js
-const derivedStorage = require('derived-key-storage')
+const derivedStorage = require('dweb-derived-key-storage')
 const raf = require('random-access-file')
 
 const { key, secretKey } = derivedStorage(name => raf(name), (name, cb) => {
